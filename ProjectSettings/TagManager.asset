@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Suelo
+  - Obstaculo
+  - Fondo
   layers:
   - Default
   - TransparentFX

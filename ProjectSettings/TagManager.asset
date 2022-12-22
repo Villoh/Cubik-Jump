@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Suelo
   - Obstaculo
-  - Fondo
+  - Suelo
+  - "Monta\xF1a"
+  - "\xC1rbol"
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Processing
   - 
   - 
   - 

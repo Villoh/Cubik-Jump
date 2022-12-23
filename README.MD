@@ -97,14 +97,16 @@
 
 > Existe una curva de dificultad en función de los puntos, actualmente esta curva funciona de la siguiente manera:
 
+<br/>
+
 <center>
             
 |  Curva    | Nivel de Dificultad |
 | ------------- |:---------:|
-| A partir de 0         | 1 |
-| Entre 2500 y 5000     | 2 |
-| Entre 5000 y 7500     | 3 |
-| A partir de 1000      | 4 |
+| A partir de 0          | 1 |
+| Entre 2500 y 5000      | 2 |
+| Entre 5000 y 7500      | 3 |
+| A partir de 10000      | 4 |
 
 ***En un futuro se implementará una curva de dificultad dinámica.**
 </center>

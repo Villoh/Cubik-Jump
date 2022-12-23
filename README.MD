@@ -1,49 +1,152 @@
-## Table of Contents
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-### General Info
+# Cubik Jump 
+
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;
+           width: 100%;"
+    src="https://imgur.com/TwwRiZY.png" 
+    alt="Cubik Jump Portada">
+</img>
+
+
+## Tabla de contenidos
+
+1. [Datos y Resumen del Juego](#info-general)
+1. [Descripción del Juego](#descripcion)
+1. [Manual de Usuario](#manual-usuario)
+1. [Mecánicas del juego](#mecanicas)
+ 1. [Salto](#salto)
+ 1. [Curva de dificultad](#curva-dificultad)
+ 1. [Obstáculos](#obstaculos)
+ 1. [Música y sonido](#sonidos)
+ 1. [Tipo de Camara/Escena](#camara)
+1. [Interfaz](#interfaz)
+1. [Estado del juego](#estado)
+1. [Detalles de la producción](#detalles-produccion)
+
+<br/>
+
+## Datos y Resumen del Juego
+
+* **Título:** Cubik Jump
+
+* **Concepto principal:** cubo 3D que que realiza saltos
+
+* **Características principales:** visualmente atractivo, simple, entretenido, adictivo.
+
+* **Género:** Endless-Runner, Plataformas.
+
+* **Propósito y público objetivo:** el proposito principal es el aprendizaje y el secundario es el entretenimiento.
+
+* **Jugabilidad:** el objetivo es conseguir el mayor número de puntos esquivando todos los obstáculos posibles, para ello deberás saltar.
+
+* **Estilo visual:** escena 3D, cubos, bloom.
+
+* **Alcance:** actualmente será educacional. El futuro es incierto pero prometedor.
+
+* **Plataforma:** disponible en Windows y Android.
+
+* **Categoría:** Juego Indie
+
+<br/>
+
+## Descripción del Juego
+
+<br/>
+
+> Cubik Jump es un `Endless Runner` (subgénero de `plataformas`).
+>
+> El objetivo del juego es conseguir la máxima puntuación esquivando todos los obstáculos posibles. Esta
+> puntuación se basa en el tiempo cada segundo son 100 puntos.
+
+<br/>
+
+## Manual de Usuario
+
+<img 
+    style="display: block; 
+           margin-left: auto;
+           margin-right: auto;"
+    src="https://imgur.com/PNzhX0l.png" 
+    alt="Cubik Jump Icon">
+</img>
+
+<br/>
+
+## Mecánicas del juego
+
+<br/>
+
+### Salto
+
+> Para saltar necesitarás presionar el espacio o click izquierdo en Windows, y tocar la pantalla en Android.
+> Una mecánica simple pero efectiva.
+
+<br/>
+
+### Curva de dificultad
+
+> Existe una curva de dificultad en función de los puntos, actualmente esta curva funciona de la siguiente manera:
+
+<div style="margin-left: auto;
+            margin-right: auto;
+            width: 30%">
+            
+|  Curva    | Nivel de Dificultad |
+| ------------- |:---------:|
+| A partir de 0         | 1 |
+| Entre 2500 y 5000     | 2 |
+| Entre 5000 y 7500     | 3 |
+| A partir de 1000      | 4 |
+
+***En un futuro se implementará una curva de dificultad dinámica.**
+</div>
+
+<br/>
+
+### Obstáculos
+
+> Los obstáculos que aparecen de manera aleatoria suponen un desafío para el jugador puesto que tendrá que saltar los máximos posibles.
+
+<br/>
+
+### Música y sonidos
+
+> Se ha utilizado una track sin copyright para el fondo: [Theme Track](https://youtu.be/wOMwO5T3yT4?t=2040) y para el deathsound del cubo he utilizado este sonido: [Death Sound](https://pixabay.com/sound-effects/pixel-death-66829/)
+
+<br/>
+
+### Tipo de Camara/Escena
+
+> En este caso he optado por un camara 3D, aprovechandome de la profundidad de los objetos en 3D y un fondo plano.
+
+<br/>
+
+## Interfaz
+
+**Puntuación:** Muestra la puntuación actual que lleva el jugador.
+
+**Puntuación Record:** Aparece en el menu de pausa/game over y se muestra el mayor record realizado.
+
+**Botones de Jugar y Salir**: Se dispone de dos botones en el menu de pausa/game over; jugar y salir.
+
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
-## Technologies
-***
-A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
-***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+
+**Fuente Utilizada**: [Slice](https://www.dafont.com/slice-cmunk.font)
+
+<br/>
+
+## Estados del juego
+
+> El juego solamente contiene una escena, lo unico que varía son los GameObjects que se encuentran es ella.
+
+<br/>
+
+## Detalles de la producción
+
+**Fecha de inicio:** 09/12/2022
+
+**Fecha de finalización:** 23/12/2022 (Versión Estable) - Actualidad
+
+**Presupuesto:** 0€

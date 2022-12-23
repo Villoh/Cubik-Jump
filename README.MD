@@ -12,18 +12,18 @@
 
 ## Tabla de contenidos
 
-1. [Datos y Resumen del Juego](#info-general)
-1. [Descripción del Juego](#descripcion)
-1. [Manual de Usuario](#manual-usuario)
-1. [Mecánicas del juego](#mecanicas)
- 1. [Salto](#salto)
- 1. [Curva de dificultad](#curva-dificultad)
- 1. [Obstáculos](#obstaculos)
- 1. [Música y sonido](#sonidos)
- 1. [Tipo de Camara/Escena](#camara)
+1. [Datos y Resumen del Juego](#datos-y-resumen-del-juego)
+1. [Descripción del Juego](#descripción-del-juego)
+1. [Manual de Usuario](#manual-de-usuario)
+1. [Mecánicas del juego](#mecánicas-del-juego)
+    1. [Salto](#salto)
+    1. [Curva de dificultad](#curva-de-dificultad)
+    1. [Obstáculos](#obstáculos)
+    1. [Música y sonidos](#música-y-sonidos)
+    1. [Tipo de Cámara/Escena](#tipo-de-camaraescena)
 1. [Interfaz](#interfaz)
-1. [Estado del juego](#estado)
-1. [Detalles de la producción](#detalles-produccion)
+1. [Estados del juego](#estados-del-juego)
+1. [Detalles de la producción](#detalles-de-la-producción)
 
 <br/>
 
@@ -64,13 +64,8 @@
 
 ## Manual de Usuario
 
-<img 
-    style="display: block; 
-           margin-left: auto;
-           margin-right: auto;"
-    src="https://imgur.com/PNzhX0l.png" 
-    alt="Cubik Jump Icon">
-</img>
+
+<img src="https://imgur.com/PNzhX0l.png" align="center" alt="Cubik Jump Tutorial"></img>
 
 <br/>
 
@@ -89,9 +84,7 @@
 
 > Existe una curva de dificultad en función de los puntos, actualmente esta curva funciona de la siguiente manera:
 
-<div style="margin-left: auto;
-            margin-right: auto;
-            width: 30%">
+<div align="center">
             
 |  Curva    | Nivel de Dificultad |
 | ------------- |:---------:|

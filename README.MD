@@ -21,6 +21,18 @@
     1. [Obstáculos](#obstáculos)
     1. [Música y sonidos](#música-y-sonidos)
     1. [Tipo de Cámara/Escena](#tipo-de-camaraescena)
+1. [Elementos de la escena](#elementos-de-la-escena)
+    1. [Montañas](#montañas)
+    1. [Arboles](#arboles)
+    1. [Suelo](#suelo)
+    2. [Hierba](#hierba)
+    1. [Obstáculos](#obstáculos)
+    1. [Jugador](#jugador)
+    1. [Managers](#managers)
+    1. [GameArea](#gamearea)
+    1. [Textos y botones](#textos-y-botones)
+    1. [Sistema de partículas](#sistema-de-partículas)
+    1. [Post-Process Volume](#post-process-volume)
 1. [Interfaz](#interfaz)
 1. [Estados del juego](#estados-del-juego)
 1. [Detalles de la producción](#detalles-de-la-producción)
@@ -113,7 +125,90 @@
 
 ### Tipo de Camara/Escena
 
+<br/>
+
 > En este caso he optado por un camara 3D, aprovechandome de la profundidad de los objetos en 3D y un fondo plano.
+
+<br/>
+
+## Elementos de la escena.
+
+<br/>
+
+### Montañas
+
+> Representadas en color blanco mediante un Material, aparecen en el fondo de la escena.
+> Tienen un BoxCollider y un RigidBody para poder moverse por la escena creando la sensación de movimiento.
+> También cuenta con el script que le da movimiento.
+
+<br/>
+
+### Arboles
+
+> Representados en color verde con un tono oscuro mediante un Material, aparecen donde empieza la hierba.
+> Tienen un BoxCollider y un RigidBody para poder moverse por la escena creando la sensación de movimiento.
+> También cuenta con el script que le da movimiento.
+
+<br/>
+
+### Suelo
+
+> El suelo está formado por un BoxCollider y un RigidBody para que el jugador pueda situarse encima de él, además de tener un Material para darle un color Naranja.
+
+<br/>
+
+### Hierba
+
+> En este caso, la hierba tambien tiene un BoxCollider y un RigidBody para evitar que el fondo se caiga. Tiene un material con un color verde claro.
+
+<br/>
+
+### Obstáculos
+
+> Objeto con un RigidBody un BoxCollider para poder detectar las colisiones con el jugador.
+> Está representado con un color morado de tono oscuro.
+> Contiene el script de movimiento.
+
+<br/>
+
+### Jugador
+
+> El jugador es el objeto más importante de la escena pues es el protagonista, está representado con un color naranja mediante el material, además de tener un RigisBody y un BoxCollider para implementar todo el tema de las físicas.
+> Tiene un Animator que controla la animación de salto.
+> Contiene un script que controla todas las físicas referentes al jugador.
+> Por último tiene un audio source con el death sound.
+
+<br/>
+
+### Managers
+
+> UIManager para la parte de la interfaz y GameManager para la parte relacionada con el inicio, fin, pausa y demás.
+
+<br/>
+
+### GameArea
+
+> Simplemente tiene un Box Collider con el Trigger activado, lo utilizo para saber cuando un elemento sale del area y así destruirlo.
+
+<br/>
+
+### Textos y botones
+
+> Todos los TMP_Text y Button de la escena.
+
+<br/>
+
+## Sistema de partículas
+
+> Cada elemento en pantalla que tiene movimiento, tiene un sistema de particulas que se reproduce cuando el jugador muere.
+
+<br/>
+
+### Post-Process Volume
+
+> Genera un efecto visual de brillo gracias a la propiedad bloom que está activada.
+
+
 
 <br/>
 

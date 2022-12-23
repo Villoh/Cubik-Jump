@@ -64,8 +64,9 @@
 
 ## Manual de Usuario
 
-
-<img src="https://imgur.com/PNzhX0l.png" align="center" alt="Cubik Jump Tutorial"></img>
+<center>
+    <img src="https://imgur.com/PNzhX0l.png" alt="Cubik Jump Tutorial"></img>
+</center>
 
 <br/>
 
@@ -84,7 +85,7 @@
 
 > Existe una curva de dificultad en función de los puntos, actualmente esta curva funciona de la siguiente manera:
 
-<div align="center">
+<center>
             
 |  Curva    | Nivel de Dificultad |
 | ------------- |:---------:|
@@ -94,7 +95,7 @@
 | A partir de 1000      | 4 |
 
 ***En un futuro se implementará una curva de dificultad dinámica.**
-</div>
+</center>
 
 <br/>
 

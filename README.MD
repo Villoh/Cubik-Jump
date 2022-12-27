@@ -103,9 +103,10 @@
             
 |  Curva    | Nivel de Dificultad |
 | ------------- |:---------:|
-| A partir de 0         | 1 |
-| Entre 250 y 500       | 2 |
-| Entre 500 y 750       | 3 |
+| A partir de 0         | 0 |
+| Entre 250 y 500       | 1 |
+| Entre 500 y 750       | 2 |
+| Entre 750 y 1000      | 3 |
 | A partir de 1000      | 4 |
 
 ***En un futuro se implementará una curva de dificultad dinámica.**

@@ -1,4 +1,7 @@
+using System;
+using System.Collections;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +14,15 @@ public class UIManager : MonoBehaviour
     public TMP_Text record;
     public Button jugarBtn;
     public Button salirBtn;
-    private float timer  = 0;
+
+    private double timer = 0;
     private int score = 0;
+
     private void Start()
     {
-        this.record.text = "" + PlayerPrefs.GetInt("counter");
+        this.record.text = "" + PlayerPrefs.GetInt("counter"); 
     }
+
     private void Update()
     {
         actualizaTexto();
@@ -43,7 +49,7 @@ public class UIManager : MonoBehaviour
      * Metodo que controla que textos tienen que estar activos cuando el juego esta pausado (en el inicio del programa o cuando el jugador pierde).
      */
     public void textosJuegoPausado()
-    {
+    { 
         this.record.text = "" + PlayerPrefs.GetInt("counter");
         this.record.transform.gameObject.SetActive(true);
         this.recordTexto.transform.gameObject.SetActive(true);
@@ -68,21 +74,20 @@ public class UIManager : MonoBehaviour
      * public void actualizaTexto()
      * Actualiza la puntuación del TMP de la escena mediante la variable score de esta clase. Este metodo tiene que ser llamado en el Update por lo que se reproduciria cada frame.
      * Cuando entra en el método actualiza el valor de la variable mediante el deltaTime que es el valor (como float) desde el anterior frame al actual, 
-     * y luego mediante una condición que determina que el timer es mayor o igual que un valor (en mi caso una centesima) se resetea el timer porque ha pasado una centesima y aumenta en uno el score.
-     * Basicamente cada centesima sumaría 1 punto, lo que es igual a 100 puntos por segundo.
+     * y luego mediante una condición que determina que el timer es mayor o igual que un valor (en mi caso una centesima) se resetea el timer porque ha pasado una décima y aumenta en uno el score.
+     * Basicamente cada décima sumaría 1 punto, lo que es igual a 100 puntos por segundo.
      */
-    public void actualizaTexto()
+    private void actualizaTexto()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= 0.01)
-        {
-            timer = 0f;
-            score++;
-        }
-        if (puntuacion.isActiveAndEnabled == true)
-        {
-            puntuacion.text = "" + score;
+        if (puntuacion.isActiveAndEnabled)
+        {        
+            timer += Time.deltaTime;
+            if (timer >= 0.09)
+            {
+                score++;
+                puntuacion.SetText(score.ToString());
+                timer = 0;
+            }
         }
     }
 }

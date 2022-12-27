@@ -168,20 +168,20 @@ public class GameManager : MonoBehaviour
     {
         int dificultad = 0;
 
-        if (uiManager.getScore() >= 2500 && uiManager.getScore() < 5000)
+        if (uiManager.getScore() >= 250 && uiManager.getScore() < 500)
         {
             dificultad = 1;
 
         }
-        else if (uiManager.getScore() >= 5000 && uiManager.getScore() < 7500)
+        else if (uiManager.getScore() >= 500 && uiManager.getScore() < 750)
         {
             dificultad = 2;
         }
-        else if (uiManager.getScore() >= 7500 && uiManager.getScore() < 10000)
+        else if (uiManager.getScore() >= 750 && uiManager.getScore() < 1000)
         {
             dificultad = 3;
         }
-        else if (uiManager.getScore() >= 10000)
+        else if (uiManager.getScore() >= 1000)
         {
             dificultad = 4;
         }

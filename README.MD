@@ -49,7 +49,7 @@
 
 * **Género:** Endless-Runner, Plataformas.
 
-* **Propósito y público objetivo:** el proposito principal es el aprendizaje y el secundario es el entretenimiento.
+* **Propósito y público objetivo:** el proposito principal es el aprendizaje y el secundario es el entretenimiento. El público objetivo son todos.
 
 * **Jugabilidad:** el objetivo es conseguir el mayor número de puntos esquivando todos los obstáculos posibles, para ello deberás saltar.
 
@@ -70,7 +70,7 @@
 > Cubik Jump es un `Endless Runner` (subgénero de `plataformas`).
 >
 > El objetivo del juego es conseguir la máxima puntuación esquivando todos los obstáculos posibles. Esta
-> puntuación se basa en el tiempo cada segundo son 100 puntos.
+> puntuación se basa en el tiempo, cada segundo son 10 puntos.
 
 <br/>
 
@@ -103,10 +103,10 @@
             
 |  Curva    | Nivel de Dificultad |
 | ------------- |:---------:|
-| A partir de 0          | 1 |
-| Entre 2500 y 5000      | 2 |
-| Entre 5000 y 7500      | 3 |
-| A partir de 10000      | 4 |
+| A partir de 0         | 1 |
+| Entre 250 y 500       | 2 |
+| Entre 500 y 750       | 3 |
+| A partir de 1000      | 4 |
 
 ***En un futuro se implementará una curva de dificultad dinámica.**
 </center>
@@ -200,7 +200,7 @@
 
 <br/>
 
-## Sistema de partículas
+### Sistema de partículas
 
 > Cada elemento en pantalla que tiene movimiento, tiene un sistema de particulas que se reproduce cuando el jugador muere.
 
